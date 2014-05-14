@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mystore</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<div id="user_nav">
+  <% if current_user %>
+   <img id="irc_mi" src="http://www.clipartbest.com/cliparts/bcy/obM/bcyobMocL.png" width="200" height="100" style="margin-top: 0px;">
+    Logged in as <%= current_user.email %>.
+     <%= link_to "Log out", log_out_path, :class => 'log_out_position btn button2' %>
+     <div class="header-border"></div>
+  <% else %>
+    <a href="<%= root_url %>"> <img id="irc_mi" src="http://www.clipartbest.com/cliparts/bcy/obM/bcyobMocL.png" width="200" height="100" style="margin-top: 0px;"></a>
+    <%= link_to "Sign up", sign_up_path, :class => 'signin_signup_position btn button2' %> or
+    <%= link_to "log in", log_in_path, :class => 'signin_signup_position btn button2'  %>
+    <div class="header-border"></div>
+  <% end %>
+</div>
+
+<% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
+
+
+<body>
+
+<%= yield %>
+<%= render :partial => "stores/footer" %>
+</body>
+</html>

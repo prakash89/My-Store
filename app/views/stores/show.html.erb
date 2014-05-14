@@ -1,0 +1,27 @@
+<h1>Drug details</h1>
+<div>
+	<strong>Drugs Name:&nbsp;</strong>
+	<%= @store.drugs_name %>
+</div>
+
+<div>
+	<strong>Price:&nbsp;</strong>
+	<%= @store.price %>
+</div>
+
+<div>
+	<strong>Company:&nbsp;</strong>
+	<%= @store.company %>
+</div>
+
+<div>
+	<strong>Quantity:&nbsp;</strong>
+	<%= @store.quantity %>
+</div>
+
+<div>
+	<strong>Expiring date:&nbsp;</strong>
+	<%= @store.date %>
+</div>
+
+<%= link_to 'Back', stores_path %>

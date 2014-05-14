@@ -1,0 +1,32 @@
+<%#= link_to "Log out", log_out_path, :class => 'log_out_position' %>
+<%= form_tag stores_path, :method => 'get', :class => "search_position" do %>
+<p>
+ <%= text_field_tag :search, params[:search] %>
+ <%= submit_tag "Search", :name => nil %>
+</p>
+<%end%>
+<h1>Drugs List</h1>
+
+<table>
+  <tr>
+  	<th><h4>Drugs_name&nbsp;&nbsp;&nbsp;</h4></th>
+  	<th><h4>Price&nbsp;&nbsp;&nbsp;</h4></th>
+  	<th><h4>Company&nbsp;&nbsp;&nbsp;</h4></th>
+  	<th><h4>Quantity&nbsp;&nbsp;&nbsp;</h4></th>
+  	<th><h4>Expiring Date&nbsp;&nbsp;&nbsp;</h4></th>
+  </tr>	
+
+<% @stores.each do |itam| %>
+<tr>
+<th><%= itam.drugs_name %></th>
+<th><%= itam.price %>&nbsp;</th>
+<th><%= itam.company %></th>
+<th><%= itam.quantity %></th>
+<th><%= itam.date %></th>
+<th><%= link_to 'Show', store_path(itam) %>&nbsp;&nbsp;</th>
+<th><%= link_to 'Edit', edit_store_path(itam) %>&nbsp;&nbsp;</th>
+<th><%= link_to 'Delete', store_path(itam), method: :delete, data: {confirm: 'Are u sure'}  %></th>
+</tr>
+<% end %>
+</table><br><br>
+<%= link_to 'New Item', new_store_path %>

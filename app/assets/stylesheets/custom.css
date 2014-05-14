@@ -1,0 +1,82 @@
+.text_box_for_name {
+	margin-left: 40px ;
+}
+
+.text_box_for_company {
+	margin-left: 57px ;
+}
+
+.text_box_for_quantity {
+	margin-left: 62px ;
+}
+
+.text_box_for_exp {
+	margin-left: 22px ;
+}
+
+.text_box_for_price {
+	margin-left: 88px ;
+}
+
+.log_out_position {
+	 margin-left: 1100px;
+}
+
+.signin_signup_position {
+	 /*margin-left: 900px;*/
+	 text-align: right !important;
+}
+
+.header-border{
+    border-top: 5px solid #8a8a8a;
+}
+
+.footer-border{
+    border-top: 2px solid #8a8a8a;
+}
+
+.footer-margin{
+	/*position: absolute;*/
+    margin-bottom: 20px;
+}
+
+.search_position {
+	margin-top: 20px;
+}
+
+body {
+	background-image:url("last.gif");
+	width: 100%;
+	height: 100%;
+	background-repeat:no-repeat;
+	margin-right: 50px !important;
+}
+
+.home_page {
+	margin-top: -198px;
+	margin-bottom: -20px;
+	margin-left: 400px;
+	padding-right:100px;
+	text-align: right !important;
+	width: 60%;
+	padding-left: none; 
+	padding-right: none;
+
+}
+
+.heading {
+	text-align: left;
+	width: 30%;
+
+}
+
+.button2 {
+	background:#454545;
+	color:#ffffff !important;
+	padding:7px 19px 9px;
+	border-radius:4px;
+	font-size:12px;
+	line-height:15px;
+	display:inline-block;
+}
+

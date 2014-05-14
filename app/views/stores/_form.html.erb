@@ -1,0 +1,30 @@
+<%= form_for @store do |s| %>
+<div>
+	<%= s.label :Drugs_Name%>
+	<%= s.text_field :drugs_name, :class => 'text_box_for_name' %>
+</div><br>
+
+<div>
+<%= s.label :Price %>
+<%= s.text_field :price, :class => "text_box_for_price" %>
+</div><br>
+
+<div>
+<%= s.label :Company %>
+<%= s.text_field :company, :class => 'text_box_for_company' %>
+</div><br>
+
+<div>
+<%= s.label :Quantity %>
+<%= s.text_field :quantity, :class => 'text_box_for_quantity' %>
+</div><br>
+
+<div>
+	<%= s.label :Expairing_Date %>
+	<%= s.text_field :date, :class => 'text_box_for_exp' %>
+</div><br>
+
+<div>
+	<%= s.submit %>
+</div>
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  drugs_name: MyString
+  : 
+  price: MyString
+  : 
+
+two:
+  drugs_name: MyString
+  : 
+  price: MyString
+  : 
