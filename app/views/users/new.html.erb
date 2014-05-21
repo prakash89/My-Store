@@ -1,8 +1,7 @@
 
 <h1>Sign Up</h1>
+<%= form_for @user, :html => {:id => 'signupform'} do |f| %>
 
-<%= form_for @user do |f| %>
-<% binding.pry %>
   <% if @user.errors.any? %>
     <div class="error_messages">
       <h2>Form is invalid</h2>

@@ -5,6 +5,8 @@ Mystore::Application.routes.draw do
   get "log_in" => "sessions#new", :as => "log_in"
   get "sign_up" => "users#new", :as => "sign_up"
   root  "home#new"
+  post 'email_contact' => 'home#email_contact', :as => :email_contact
+  get 'contact' => 'home#contact'
 
 
 

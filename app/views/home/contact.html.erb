@@ -1,0 +1,45 @@
+<!-- <div class="container container-min-height" id="content"> -->
+  <div class="header-border"></div>
+  <!-- <div class="row contact-margin"> -->
+    <div class="col-lg-4 col-sm-3 col-md-3">
+          <!-- <h4>Find Us</h4>
+          <figure class="page6-img1 img-bot">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.1608718804846!2d-105.10668648941036!3d39.91541596361853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b8b9984c0c7c7%3A0xc755ef30a5248395!2s12303+Airport+Way!5e0!3m2!1sen!2sin!4v1393928460038" width="400" height="300" frameborder="0" style="border:0"></iframe>
+          </figure> -->
+          <!-- <div class="clear"></div>
+          <dl class="dl1">
+              <dt> 12303 Airport Way, Suite 200, Broomfield, CO 80021</dt>   
+              <dd><span>Freephone:</span>   +1 303 327 1457</dd>                                  
+              <dd>E-mail: <a href="#">info@myinotary.com</a></dd>
+          </dl> -->
+    </div>
+    <div class="col-lg-4 col-sm-6 col-md-6">
+      <%= form_tag email_contact_path, :id => 'contact_email_form', :authenticity_token => true do %>
+        <div class="form-group">
+          <input type="text" class="form-control" autocomplete="off" placeholder="Your Name&nbsp;*" name="contact[name]" value=<%= @name || '' %> >
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" autocomplete="off" placeholder="Your E-mail Address&nbsp;*" name="contact[email]" value=<%= @email || '' %>>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Phone Number" name="contact[number]">
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" rows="3" placeholder="Product U want&nbsp;*" name="contact[product]" value=<%= @product || '' %> ></textarea>
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" rows="3" placeholder="Message&nbsp;*" name="contact[message]" value=<%= @message || '' %> ></textarea>
+        </div>
+
+        
+
+
+        <button type="submit" class="btn btn-grey-normal">Submit</button>&nbsp;&nbsp;
+        <a href="<%= root_url %>" class="btn btn-default">Cancel</a>
+      <% end %>
+    </div>
+    <div class="col-lg-4 col-sm-3 col-md-3"></div>
+  <!-- </div> -->
+<!-- </div> -->

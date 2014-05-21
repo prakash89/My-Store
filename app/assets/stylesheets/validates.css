@@ -1,0 +1,74 @@
+#signupform table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+}
+#signupform .label {
+    float: left;
+    width: 26px;
+}
+#signupform .field {
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+#signupform .status {
+    float: left;
+    height: 15px;
+    padding-top: 10px;
+    width: 20px;
+}
+#signupform .textfield {
+    width: 150px;
+}
+#signupform label.error {
+    background: url("/assets/delete_icon.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #EA5200;
+    padding-bottom: 2px;
+    padding-left: 16px;
+    font-size: 12px;
+}
+#signupform label.checked {
+    background: url("/assets/tick.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#signupform .success_msg {
+    color: #0060BF;
+    font-weight: bold;
+    margin-left: 19px;
+}
+#signupform #dateformatStatus, #signupform #termsStatus {
+    margin-left: 6px;
+}
+#signupform #dateformat_eu {
+    vertical-align: middle;
+}
+#signupform #ldateformat_eu {
+    font-weight: normal;
+    vertical-align: middle;
+}
+#signupform #dateformat_am {
+    vertical-align: middle;
+}
+#signupform #ldateformat_am {
+    font-weight: normal;
+    vertical-align: middle;
+}
+#signupform #termswrap {
+    float: left;
+}
+#signupform #terms {
+    display: block;
+    float: left;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+#signupform #lterms {
+    display: block;
+    float: left;
+    font-weight: normal;
+    vertical-align: middle;
+    white-space: normal;
+
+}
+#signupform #lsignupsubmit {
+    visibility: hidden;
+}

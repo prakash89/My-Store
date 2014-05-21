@@ -17,6 +17,7 @@
 //= require bootstrap.min
 //= require jquery.validate
 //= require additional-methods
+//= require_tree ./validations/
 //= require_tree .
 
 
