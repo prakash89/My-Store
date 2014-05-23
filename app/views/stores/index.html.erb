@@ -1,12 +1,18 @@
 <%#= link_to "Log out", log_out_path, :class => 'log_out_position' %>
+Logged in using <%= current_user.provider %>.
+
 <%= form_tag stores_path, :method => 'get', :class => "search_position" do %>
 <p>
  <%= text_field_tag :search, params[:search] %>
  <%= submit_tag "Search", :name => nil %>
 </p>
 <%end%>
+<% if current_user.provider == 'facebook'%>
+<div id="fb-root"></div>
+<a href="#" id="invite_fb_friends">Invite your friends</a>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<% end %>
 <h1>Drugs List</h1>
-
 <table>
   <tr>
   	<th><h4>Drugs_name&nbsp;&nbsp;&nbsp;</h4></th>

@@ -80,3 +80,10 @@ body {
 	display:inline-block;
 }
 
+.content {
+	min-height: 350px;
+}
+
+.for_contact {
+	margin-top: 20px;
+}

@@ -21,9 +21,20 @@ Mystore::Application.configure do
 
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
+  config.action_mailer.default_url_options = { :host => 'localhost:4000' }
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => "googlemail.com",
+    :user_name            => "kbcpart1@gmail.com",
+    :password             => "orbital123",
+    :authentication       => "plain",
+    :enable_starttls_auto => true
+  }
 end

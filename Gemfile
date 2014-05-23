@@ -25,6 +25,14 @@ gem 'jquery-rails'
 
 gem 'pry', '~> 0.9.12.6'
 
+#gem 'devise'
+
+#gem 'omniauth'
+
+gem 'omniauth-facebook' 
+
+gem 'omniauth-twitter'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 

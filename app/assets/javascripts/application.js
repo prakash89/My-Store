@@ -21,3 +21,17 @@
 //= require_tree .
 
 
+$(function(){
+    $("a#invite_fb_friends").click(function(){
+        FB.init({
+        appId: '522841571170977',
+        status: true,
+        cookie: false,
+        // xfbml: true
+        });
+
+FB.ui({
+method: 'apprequests',
+message: '<%=current_user.name %> has invite you to a party for <%=get_current_board.bp_name%>'});
+});
+});
