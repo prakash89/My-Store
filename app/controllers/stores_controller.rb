@@ -3,7 +3,8 @@ class StoresController < ApplicationController
 
 	def index
 		# @stores = Store.all
-		@stores = Store.search(params[:search])
+		@stores = Store.search(params[:search]).order("drugs_name").page(params[:page]).per(5)
+		# @store = Store
 	end
 
 	def show

@@ -87,3 +87,7 @@ body {
 .for_contact {
 	margin-top: 20px;
 }
+
+.disabled {
+	color: #999;
+}

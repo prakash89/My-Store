@@ -33,6 +33,8 @@ gem 'omniauth-facebook'
 
 gem 'omniauth-twitter'
 
+gem 'kaminari', '~> 0.15.1'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 

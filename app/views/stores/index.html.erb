@@ -34,5 +34,8 @@ Logged in using <%= current_user.provider %>.
 <th><%= link_to 'Delete', store_path(itam), method: :delete, data: {confirm: 'Are u sure'}  %></th>
 </tr>
 <% end %>
-</table><br><br>
+</table><br>
+
+<%= paginate @stores %><br>
+
 <%= link_to 'New Item', new_store_path %>
