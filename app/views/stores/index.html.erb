@@ -1,6 +1,9 @@
 <%#= link_to "Log out", log_out_path, :class => 'log_out_position' %>
+<% if current_user.provider.present? %>
 Logged in using <%= current_user.provider %>.
-
+<% else %>
+Logged in using <%="narmal sign in"%>.
+<% end %>
 <%= form_tag stores_path, :method => 'get', :class => "search_position" do %>
 <p>
  <%= text_field_tag :search, params[:search] %>
@@ -38,4 +41,5 @@ Logged in using <%= current_user.provider %>.
 
 <%= paginate @stores %><br>
 
-<%= link_to 'New Item', new_store_path %>
+<%= link_to 'New Item', new_store_path %>&nbsp;&nbsp;&nbsp;&nbsp;
+<%= link_to 'Billing Itams', billing_items_path %>

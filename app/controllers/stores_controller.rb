@@ -45,6 +45,10 @@ class StoresController < ApplicationController
        redirect_to stores_path
 	end
 
+	def billing_items
+		@store = Store.new
+	end
+
 	private
 	def store_params
 	  params.require(:store).permit(:drugs_name, :price, :company, :quantity, :date)

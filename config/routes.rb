@@ -10,6 +10,7 @@ Mystore::Application.routes.draw do
   root  "home#new"
   post 'email_contact' => 'home#email_contact', :as => :email_contact
   get 'contact' => 'home#contact'
+  get 'billing_items' => 'stores#billing_items'
 
 
 

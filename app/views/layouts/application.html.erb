@@ -8,7 +8,7 @@
 </head>
 <div id="user_nav">
   <% if current_user %>
-   <a href = "<%= stores_path %>" ><img id="irc_mi" src="http://www.clipartbest.com/cliparts/bcy/obM/bcyobMocL.png" width="200" height="100" style="margin-top: 0px;"></a>
+   <a href = "<%= stores_path %>" ><img class="image-position" id="irc_mi" src="http://www.clipartbest.com/cliparts/bcy/obM/bcyobMocL.png" width="200" height="100" style="margin-top: 0px;"></a>
     Logged in as <%= current_user.email %>.
      <%= link_to "Log out", log_out_path, :class => 'log_out_position btn button2' %>
      <div class="header-border"></div>

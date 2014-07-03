@@ -1,0 +1,21 @@
+<div class='container'>
+	<h2>Billing the Items</h2>
+	<table>
+		<tr>
+			<th><h4>Drugs_name&nbsp;&nbsp;&nbsp;</h4></th>
+			<th><h4 class='billing_form_set'>Price&nbsp;&nbsp;&nbsp;</h4></th>
+		</tr>
+		<%= form_for @store do |s| %>
+		<tr>
+			<div>
+				<th id="InputsWrapper"><%= s.text_field :drugs_name %></th>
+			</div>
+			<div>
+				<th id="InputsWrapper2" class='billing_form_set'><%= s.text_field :price %></th>
+			</div>
+		</tr>
+		<% end %>
+	</table></br>
+
+	<button class="" id="AddMoreFileBox">Add New Drug</button>
+</div>

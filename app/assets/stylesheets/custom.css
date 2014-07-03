@@ -20,6 +20,7 @@
 
 .log_out_position {
 	 margin-left: 1100px;
+	 margin-top: -80px;
 }
 
 .signin_signup_position {
@@ -29,10 +30,12 @@
 
 .header-border{
     border-top: 5px solid #8a8a8a;
+    margin-right: 100px;
 }
 
 .footer-border{
     border-top: 2px solid #8a8a8a;
+    margin-right: 100px;
 }
 
 .footer-margin{
@@ -90,4 +93,12 @@ body {
 
 .disabled {
 	color: #999;
+}
+
+.image-position {
+	margin-bottom: -20px;
+}
+
+.billing_form_set {
+	margin-left: 20px;
 }
